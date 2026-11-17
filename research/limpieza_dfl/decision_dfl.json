@@ -1,0 +1,17 @@
+{
+ "incumbent": {
+  "V_PLAYER": 12.0,
+  "TOL_PLAYER": 0.15,
+  "DUP_M": 0.25,
+  "SPIKE_MAX_PLAYER": 12,
+  "HANDOVER_M": 6.0
+ },
+ "chosen": {
+  "V_PLAYER": 12.0,
+  "TOL_PLAYER": null,
+  "DUP_M": 0.25,
+  "SPIKE_MAX_PLAYER": 12,
+  "HANDOVER_M": 6.0
+ },
+ "unchanged": false
+}

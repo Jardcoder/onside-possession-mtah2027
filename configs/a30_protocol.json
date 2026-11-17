@@ -1,0 +1,30 @@
+{
+  "version": "external-pff-v1",
+  "pitch_model_sha256": "28f68f7c4056d6d9b137efd2e7ab5f3c494039380c63831649126ced25628b36",
+  "pitch_model_source": "https://github.com/roboflow/sports/blob/main/examples/soccer/setup.sh",
+  "selection_ground_truth": "label",
+  "seeds": [20261101, 7, 11, 23, 42],
+  "external_clips": [
+    {"id": "3816_T2", "match_id": "3816", "period": 2, "fps": 30.0, "pitch": [105.0, 68.0]},
+    {"id": "10507_T2", "match_id": "10507", "period": 2, "fps": 30.0, "pitch": [105.0, 68.0]}
+  ],
+  "tracker_candidates": [
+    {"name": "strict", "params": {"MARGIN_M": 2.0, "GATE_M_PER_FRAME": 1.0, "GATE_MIN_M": 0.75, "MAX_GAP": 3, "MIN_LEN": 12, "MIN_MEAN_CONF": 0.35, "STATIC_PX": 4.0, "STATIC_PITCH_M": 2.0, "BRIDGE": 3}},
+    {"name": "control", "params": {"MARGIN_M": 3.0, "GATE_M_PER_FRAME": 1.4, "GATE_MIN_M": 1.0, "MAX_GAP": 5, "MIN_LEN": 8, "MIN_MEAN_CONF": 0.25, "STATIC_PX": 4.0, "STATIC_PITCH_M": 2.0, "BRIDGE": 5}},
+    {"name": "recall", "params": {"MARGIN_M": 5.0, "GATE_M_PER_FRAME": 1.8, "GATE_MIN_M": 1.5, "MAX_GAP": 8, "MIN_LEN": 4, "MIN_MEAN_CONF": 0.15, "STATIC_PX": 4.0, "STATIC_PITCH_M": 2.0, "BRIDGE": 8}}
+  ],
+  "tracker_selection": "maximise minimum per-match point-in-reviewed-box F1; ties to declared order",
+  "anchor_probability": 0.0,
+  "model_candidates": [
+    {"name": "label_uniform", "target": "label", "short_ref": 0.0, "short_max": 1.0},
+    {"name": "poss_uniform", "target": "label_poss", "short_ref": 0.0, "short_max": 1.0},
+    {"name": "label_short", "target": "label", "short_ref": 4.0, "short_max": 4.0},
+    {"name": "poss_short", "target": "label_poss", "short_ref": 4.0, "short_max": 4.0}
+  ],
+  "network": {"hidden": 256, "layers": 2, "dropout": 0.1, "stride": 4, "chunk": 1000, "batch": 32, "steps": 200, "epochs": 15, "patience": 3, "lr": 0.001, "weight_decay": 0.0001, "touch_weight": 5.0, "win": 2000, "margin": 250, "infer_batch": 32},
+  "lambda_ha": [0.0, 1.0, 2.0, 4.0, 8.0, 16.0, 24.0, 32.0, 48.0],
+  "lambda_d": [0.0, 2.0, 4.0, 8.0, 16.0, 24.0, 32.0, 48.0, 64.0, 96.0, 128.0, 192.0],
+  "gpu_share": 0.7,
+  "maximum_training_seconds_per_model": 3600,
+  "minimum_free_disk_bytes": 10737418240
+}

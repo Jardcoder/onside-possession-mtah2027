@@ -1,0 +1,58 @@
+{
+ "combo": "r3.5_dv2.5_w5_c1.5x12_g5",
+ "standalone_lambda": [
+  16.0,
+  4.0
+ ],
+ "standalone_objective": 0.692731847514127,
+ "blend": {
+  "alpha": 0.75,
+  "lambda": [
+   8.0,
+   32.0
+  ],
+  "inner_objective": 0.7010366065472229
+ },
+ "blend_candidates": [
+  {
+   "alpha": 0.0,
+   "lambda": [
+    24.0,
+    64.0
+   ],
+   "inner_objective": 0.6151897777650861
+  },
+  {
+   "alpha": 0.25,
+   "lambda": [
+    16.0,
+    64.0
+   ],
+   "inner_objective": 0.6704476634654817
+  },
+  {
+   "alpha": 0.5,
+   "lambda": [
+    8.0,
+    64.0
+   ],
+   "inner_objective": 0.6863587524941297
+  },
+  {
+   "alpha": 0.75,
+   "lambda": [
+    8.0,
+    32.0
+   ],
+   "inner_objective": 0.7010366065472229
+  },
+  {
+   "alpha": 1.0,
+   "lambda": [
+    16.0,
+    4.0
+   ],
+   "inner_objective": 0.692731847514127
+  }
+ ]
+}

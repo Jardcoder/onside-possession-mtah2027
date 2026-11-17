@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "protocol_version": "external-pff-v1",
+  "source": "PFF development videos only",
+  "detector_sha256": "048f68f60c6c572c94010bc7f5f695e93e8195d5a1727f3a4398e2a4396a60d3",
+  "excluded_matches": [
+    "10503",
+    "10508",
+    "3813",
+    "3818",
+    "3823",
+    "3838",
+    "3843",
+    "3844"
+  ],
+  "sources": [
+    {
+      "clip": {
+        "id": "3816_T2",
+        "match_id": "3816",
+        "period": 2,
+        "fps": 30.0,
+        "pitch": [
+          105.0,
+          68.0
+        ]
+      },
+      "sha256": {
+        "candidates": "5c1d1be794576a5b8ca21c9fdbe9db36b51978eb83cd53e9cc257459574568e9",
+        "homography": "c23d6d978dd239e7aec40d9a825411d01d7553814af3c55aca4879ef86eb9dcb",
+        "homography_provenance": "ed30c166974be1d6620304eceeae3e42d169db63e34e18c9a56c78008a5a2057",
+        "reviews": "57d34cb27b53862b8862cb0e35ecab584730f20161f296a5d563caffd5b5c894",
+        "video": "1cc329d236eff664e882337dc5d4ff746ef4a5a80cf36ea8ca27fbad924db17a"
+      },
+      "homography_provenance": {
+        "model_sha256": "28f68f7c4056d6d9b137efd2e7ab5f3c494039380c63831649126ced25628b36",
+        "video_sha256": "1cc329d236eff664e882337dc5d4ff746ef4a5a80cf36ea8ca27fbad924db17a",
+        "script_sha256": "bc0c5184564cc1fd1ec7f5581347f6f831e2c4bdc3afebe303600171f315c8db",
+        "frames": 18150,
+        "fps": 30.0,
+        "every": 3,
+        "keypoint_confidence": 0.5,
+        "maximum_age_seconds": 3.0,
+        "image_size": 640,
+        "homography_sha256": "c23d6d978dd239e7aec40d9a825411d01d7553814af3c55aca4879ef86eb9dcb",
+        "public_model_source": "https://github.com/roboflow/sports/blob/main/examples/soccer/setup.sh",
+        "parent_homography_sha256": "5b57e7346dc635a53cc4c06970757b66852bd601f0d39736bead8107a474be6e",
+        "parent_provenance_sha256": "3609f93754112079806e54ea0f71ed6fcab599ebca18c81113009f02a5308587",
+        "mask_sha256": "808e17f4e84a211847c255b72b4a21f9dc546cf3c8f5dba3c1dacae86c9c0e63",
+        "mask_source": "train75 groups only, 60s blocks with3s guards",
+        "generator_sha256": "3aa8bc63ff2c01a3efb60af09d92a9eaa4b24b1fefb72d8f33ebc745dfc381b1"
+      }
+    },
+    {
+      "clip": {
+        "id": "10507_T2",
+        "match_id": "10507",
+        "period": 2,
+        "fps": 30.0,
+        "pitch": [
+          105.0,
+          68.0
+        ]
+      },
+      "sha256": {
+        "candidates": "487f87ec7e4b46f9917f69ffeb5fa3dee6c8936df4e0def68e0d9a4554098e2b",
+        "homography": "0be9b0afb2ad049b4da939c81d7a2dac17d06aff6425827ce35ff99b2c723b80",
+        "homography_provenance": "fe0517916424dc4d60071ff8a7a159bfee40beed6adebed2bf93c0624efc3f23",
+        "reviews": "4555e9a261c2e9f0ba3799089ffb6e5c1ababb18a1207eb599087943bf7233c3",
+        "video": "d0f709ab0cfcc9cbf3616b9979ff3e9fab3783962c4ba7dad4ac99cae2ac7f2c"
+      },
+      "homography_provenance": {
+        "model_sha256": "28f68f7c4056d6d9b137efd2e7ab5f3c494039380c63831649126ced25628b36",
+        "video_sha256": "d0f709ab0cfcc9cbf3616b9979ff3e9fab3783962c4ba7dad4ac99cae2ac7f2c",
+        "script_sha256": "bc0c5184564cc1fd1ec7f5581347f6f831e2c4bdc3afebe303600171f315c8db",
+        "frames": 18150,
+        "fps": 30.0,
+        "every": 3,
+        "keypoint_confidence": 0.5,
+        "maximum_age_seconds": 3.0,
+        "image_size": 640,
+        "homography_sha256": "0be9b0afb2ad049b4da939c81d7a2dac17d06aff6425827ce35ff99b2c723b80",
+        "public_model_source": "https://github.com/roboflow/sports/blob/main/examples/soccer/setup.sh",
+        "parent_homography_sha256": "8fcdb636652f9e6efaea10fdd0a9b6686da2196cf10bbb435ef8be3c9b93583a",
+        "parent_provenance_sha256": "20c03c575ed4170cb2120671d33955fa6b88fbd470a927ec3f09eb6163deaefe",
+        "mask_sha256": "392cdb863ab3d9bcaded716e1ae54423a4aa2e5245dce2ba996d528caf81a2fc",
+        "mask_source": "train75 groups only, 60s blocks with3s guards",
+        "generator_sha256": "3aa8bc63ff2c01a3efb60af09d92a9eaa4b24b1fefb72d8f33ebc745dfc381b1"
+      }
+    }
+  ],
+  "tracker_candidates": [
+    {
+      "name": "strict",
+      "params": {
+        "MARGIN_M": 2.0,
+        "GATE_M_PER_FRAME": 1.0,
+        "GATE_MIN_M": 0.75,
+        "MAX_GAP": 3,
+        "MIN_LEN": 12,
+        "MIN_MEAN_CONF": 0.35,
+        "STATIC_PX": 4.0,
+        "STATIC_PITCH_M": 2.0,
+        "BRIDGE": 3
+      },
+      "matches": {
+        "3816": {
+          "tp": 191,
+          "fp": 11,
+          "fn": 206,
+          "positives": 397,
+          "negatives": 49,
+          "f1": 0.6377295492487479
+        },
+        "10507": {
+          "tp": 279,
+          "fp": 18,
+          "fn": 283,
+          "positives": 562,
+          "negatives": 42,
+          "f1": 0.6495925494761351
+        }
+      },
+      "objective": 0.6377295492487479
+    },
+    {
+      "name": "control",
+      "params": {
+        "MARGIN_M": 3.0,
+        "GATE_M_PER_FRAME": 1.4,
+        "GATE_MIN_M": 1.0,
+        "MAX_GAP": 5,
+        "MIN_LEN": 8,
+        "MIN_MEAN_CONF": 0.25,
+        "STATIC_PX": 4.0,
+        "STATIC_PITCH_M": 2.0,
+        "BRIDGE": 5
+      },
+      "matches": {
+        "3816": {
+          "tp": 265,
+          "fp": 14,
+          "fn": 132,
+          "positives": 397,
+          "negatives": 49,
+          "f1": 0.7840236686390533
+        },
+        "10507": {
+          "tp": 379,
+          "fp": 25,
+          "fn": 183,
+          "positives": 562,
+          "negatives": 42,
+          "f1": 0.7846790890269151
+        }
+      },
+      "objective": 0.7840236686390533
+    },
+    {
+      "name": "recall",
+      "params": {
+        "MARGIN_M": 5.0,
+        "GATE_M_PER_FRAME": 1.8,
+        "GATE_MIN_M": 1.5,
+        "MAX_GAP": 8,
+        "MIN_LEN": 4,
+        "MIN_MEAN_CONF": 0.15,
+        "STATIC_PX": 4.0,
+        "STATIC_PITCH_M": 2.0,
+        "BRIDGE": 8
+      },
+      "matches": {
+        "3816": {
+          "tp": 328,
+          "fp": 10,
+          "fn": 69,
+          "positives": 397,
+          "negatives": 49,
+          "f1": 0.8925170068027211
+        },
+        "10507": {
+          "tp": 479,
+          "fp": 33,
+          "fn": 83,
+          "positives": 562,
+          "negatives": 42,
+          "f1": 0.8919925512104283
+        }
+      },
+      "objective": 0.8919925512104283
+    }
+  ],
+  "tracker": {
+    "name": "recall",
+    "params": {
+      "MARGIN_M": 5.0,
+      "GATE_M_PER_FRAME": 1.8,
+      "GATE_MIN_M": 1.5,
+      "MAX_GAP": 8,
+      "MIN_LEN": 4,
+      "MIN_MEAN_CONF": 0.15,
+      "STATIC_PX": 4.0,
+      "STATIC_PITCH_M": 2.0,
+      "BRIDGE": 8
+    },
+    "matches": {
+      "3816": {
+        "tp": 328,
+        "fp": 10,
+        "fn": 69,
+        "positives": 397,
+        "negatives": 49,
+        "f1": 0.8925170068027211
+      },
+      "10507": {
+        "tp": 479,
+        "fp": 33,
+        "fn": 83,
+        "positives": 562,
+        "negatives": 42,
+        "f1": 0.8919925512104283
+      }
+    },
+    "objective": 0.8919925512104283
+  },
+  "anchor_probability": 0.0,
+  "share": 0.29468246733515646,
+  "fps": 25,
+  "classes": [
+    {
+      "name": "<5 s",
+      "n_runs": 92,
+      "lo_frames": 0,
+      "hi_frames": 125,
+      "run_hist": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        13,
+        15,
+        13,
+        15,
+        15,
+        5,
+        4,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "5-10 s",
+      "n_runs": 10,
+      "lo_frames": 125,
+      "hi_frames": 250,
+      "run_hist": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "10-20 s",
+      "n_runs": 0,
+      "lo_frames": 250,
+      "hi_frames": 500,
+      "run_hist": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": ">=20 s",
+      "n_runs": 0,
+      "lo_frames": 500,
+      "hi_frames": null,
+      "run_hist": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "joint_provenance": {
+    "prepared_sha256": "6e42700ce16bbb2ebc33222812976dc0008fb31bc81fd705b72f3f51e8dd81a9",
+    "generator_sha256": "3aa8bc63ff2c01a3efb60af09d92a9eaa4b24b1fefb72d8f33ebc745dfc381b1",
+    "candidate_source_sha256": "1d7a3cad60fe51d31c9ef8d01121e5464601d3d950d64bb7372f661ef38882da",
+    "tracker_source_sha256": "c51dacfc333e55ffda4a12c3c2927d9703b0b8ebaa0d4d6b5064f250ba43461a",
+    "calibration_source_sha256": "df9dcec76be8620bf20faf429126a9ce6e3101c884f3303d7c0093fe5e0eea53",
+    "protocol_sha256": "7b5b75e3ab46b9127515769096ca1bda39c63d32b954a3518e28a83deba75f00",
+    "masks_sha256": {
+      "3816_T2": "808e17f4e84a211847c255b72b4a21f9dc546cf3c8f5dba3c1dacae86c9c0e63",
+      "10507_T2": "392cdb863ab3d9bcaded716e1ae54423a4aa2e5245dce2ba996d528caf81a2fc"
+    },
+    "test25_used": false,
+    "reviews_source": "admitted prepared train75 labels only; no full canonical review ledger read",
+    "geometry_limitation": "Homography reused and masked; this calibrates point tracking and gap distribution, not video-to-PFF possession alignment."
+  }
+}

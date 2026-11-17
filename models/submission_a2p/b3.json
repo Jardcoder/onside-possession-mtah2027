@@ -1,0 +1,5 @@
+{
+ "source": "PFF development training32 only (src/out/b3_pff_20261112, preregistered select_b3.py)",
+ "combo": "r3.5_dv2.5_w5_c1.5x12_g5",
+ "r": 3.5, "dv": 2.5, "win": 5, "r_ctrl": 1.5, "k": 12, "cap": 5
+}

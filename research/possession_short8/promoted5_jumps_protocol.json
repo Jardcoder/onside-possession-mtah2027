@@ -1,0 +1,110 @@
+{
+  "fit_pff": [
+    "10510",
+    "3826",
+    "3816",
+    "3837",
+    "3855",
+    "3840",
+    "3847",
+    "3859",
+    "3851",
+    "3842",
+    "10507",
+    "3836",
+    "3819",
+    "10506",
+    "3848",
+    "10516",
+    "10512",
+    "3817",
+    "3852",
+    "3829",
+    "3833",
+    "3820",
+    "3832",
+    "3856",
+    "3846",
+    "10515",
+    "3850",
+    "10509"
+  ],
+  "inner": [
+    "10504",
+    "3853",
+    "3827",
+    "3812"
+  ],
+  "outer": [
+    "3813",
+    "3818",
+    "3823",
+    "3838",
+    "3843",
+    "3844",
+    "10503",
+    "10508"
+  ],
+  "cfg": {
+    "hidden": 128,
+    "layers": 2,
+    "dropout": 0.1,
+    "stride": 2,
+    "chunk": 1000,
+    "batch": 32,
+    "steps": 200,
+    "epochs": 15,
+    "patience": 3,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "touch_weight": 5.0,
+    "win": 2000,
+    "margin": 250,
+    "infer_batch": 32,
+    "name": "label_short",
+    "target": "label",
+    "short_ref": 4.0,
+    "short_max": 4.0,
+    "seed": 20261101,
+    "maximum_training_seconds": 3600
+  },
+  "seeds": [
+    20261101,
+    7,
+    11,
+    23,
+    42
+  ],
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "salt": "promoted5-jumps-20261111:",
+  "margin_m": 3.0,
+  "arms": {
+    "vj": "1c83b15022e18c5bbc6ad9481addce5241cdb717e74cb62e5dde6ba5b320b278",
+    "fj": "7c4370db5001a273429c273c73e470eb415e010f8795afc72c2548bcfcbaf3f7"
+  },
+  "standard_sha256": "fd568aadb8d4e3f508c6dde50a9986bb4f1cef0c13c04337455314b2133c7116",
+  "seal_sha256": "3ad5b2990efac5829262a014a16f14710d6934d6fa8b5770de1206e9d146eb94",
+  "t1w_sha256": "fe277da3d507f6a31802d2dc8bfee533da870934abe8cc0c99434b14e6b27b69",
+  "frozen_promoted5": {
+    "standalone_lambda": [
+      4.0,
+      16.0
+    ],
+    "blend": {
+      "alpha": 0.75,
+      "lambda": [
+        4.0,
+        24.0
+      ],
+      "inner_objective": 0.7052812206077296
+    }
+  },
+  "adoption": "arm blend delta > 0 on both arm views and >= -0.005 on both standard views; vj first",
+  "script_sha256": "222f0c0be5e254fd916c83bab55daeb69685f0b6d7da7468266155f86d085fae"
+}
